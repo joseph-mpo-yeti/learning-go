@@ -1,4 +1,4 @@
-module github.com/joseph-mpo-yeti/learning
+module github.com/joseph-mpo-yeti/learning-go
 
 go 1.19
 
