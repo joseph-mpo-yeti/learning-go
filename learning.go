@@ -26,31 +26,7 @@ const (
 	COLOR_RED   = "\033[31m"
 )
 
-// func main() {
-
-// 	fmt.Println("Enter all Data: [first name , last name , date of birth]")
-
-// 	reader := bufio.NewReader(os.Stdin)
-// 	input, _, err := reader.ReadLine()
-
-// 	if err != nil {
-// 		output := fmt.Sprintln(string(COLOR_RED), err, string(COLOR_RESET))
-// 		panic(output)
-// 	}
-
-// 	input_str := strings.TrimSpace(string(input[:]))
-// 	member, create_member_err := createMember(&input_str)
-
-// 	if create_member_err != nil {
-// 		output := fmt.Sprintln(string(COLOR_RED), create_member_err, string(COLOR_RESET))
-// 		panic(output)
-// 	}
-
-// 	member.Print()
-
-// }
-
-func createMember(input *string) (*Member, error) {
+func CreateMember(input *string) (*Member, error) {
 
 	member := new(Member)
 	data := strings.Split(*input, ",")
